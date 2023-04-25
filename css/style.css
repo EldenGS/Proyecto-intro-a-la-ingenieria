@@ -22,7 +22,7 @@ body {
     font-family: var(--fuenteParrafos);
     font-size: 1.6rem;
     line-height: 2;
-    background-color: #0F2229;
+    background-color: #42a8a1;
 }
 
 /**Globales**/
@@ -67,7 +67,7 @@ img {
 
 /**Header**/
 .header {
-    background-image: url(../img/header2.png);
+    background-image: url(../img/Turquoise_leaves_watercolour_painting_by_Leah_Trengove.jpeg);
     height: 60rem;
     background-size: cover;
     background-repeat: no-repeat;
@@ -243,4 +243,13 @@ img {
 }
 .campo__field--textarea {
     height: 20rem;
+}
+.myv {
+    text-align: center;
+}
+.fondo_col {
+    background-color: #4E1450;
+}
+.negro_2 {
+    color: #000000;
 }
