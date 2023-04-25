@@ -1,6 +1,8 @@
 :root {
-    --fuenteHeading: 'PT Sans', sans-serif;
-    --fuenteParrafos: 'Open Sans', sans-serif;
+    --fuenteHeading: 'Lexend', sans-serif;
+    --fuenteParrafos: 'Syne', sans-serif;
+    --fuenteHeading2: 'Press Start 2P', sans-serif;
+    --fuenteBarra: 'Red Rose', sans-serif;
 
     --primario: #784D3C;
     --gris: #e1e1e1;
@@ -20,12 +22,14 @@ body {
     font-family: var(--fuenteParrafos);
     font-size: 1.6rem;
     line-height: 2;
+    background-color: #0F2229;
 }
 
 /**Globales**/
 .contenedor {
     max-width: 120rem;
     width: 90%;
+    width: min(90%, 120rem);
     margin: 0 auto;
 }
 a {
@@ -99,6 +103,7 @@ img {
     text-align: center;
     font-size: 1.8rem;
     color: var(--blanco);
+    font-family: var(--fuenteBarra);
 }
 @media (min-width: 768px) {
     .contenido-principal {
@@ -125,12 +130,16 @@ img {
     text-transform: uppercase;
     font-weight: 700;
     margin-bottom: 2rem;
+    border: none;
 }
 @media (min-width: 768px) {
     .boton {
         display: inline-block;
 
     }
+}
+.boton:hover {
+    cursor: pointer;
 }
 .boton--primario {
     background-color: var(--negro);
@@ -159,4 +168,79 @@ img {
 .widget-servis__label
 .widget-servis__info {
     font-size: 2rem;
+}
+.footer {
+    background-color: var(--negro);
+    padding: 3rem 0;
+    margin-top: 4rem;
+}
+.blanco_2 {
+    color: var(--blanco);
+}
+.press2 {
+    font-family: var(--fuenteHeading2);
+}
+
+/**Sobre Nosotros**/
+@media (min-width: 768px) {
+    .sobre-nosotros {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 2rem;
+    }
+}
+/**Servicios2**/
+.servis2 {
+    padding: 3rem 0;
+    border-bottom: 1px solid var(--gris);
+}
+@media (min-width: 768px) {
+    .servis2 {
+        display: grid;
+        grid-template-columns: 2fr 4fr;
+        column-gap: 2rem;
+    }
+}
+.servis2:last-of-type {
+    border: none;
+}
+.servis2__label {
+    font-family: var(--fuenteHeading);
+    font-weight: bold;
+}
+.servis2__info {
+    font-weight: normal;
+}
+.servis2__label
+.servis2__info {
+    font-size: 2rem;
+}
+/**Contacto**/
+.contacto-bg {
+    background-image: url(../img/301395293_744680463231802_8156634807480648157_n.jpg);
+    height: 40rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.formulario {
+    background-color: #4E1450;
+    margin: -5rem auto 0 auto;
+    width: 95%;
+    padding: 5rem;
+}
+.campo {
+    display: flex;
+    margin-bottom: 2rem;;
+}
+.campo__label {
+    flex: 0 0 9rem;
+    text-align: right;
+    padding-right: 2rem;
+}
+.campo__field {
+    flex: 1;
+    border: 1px solid var(--gris);
+}
+.campo__field--textarea {
+    height: 20rem;
 }
